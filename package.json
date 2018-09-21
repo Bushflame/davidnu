@@ -1,0 +1,12 @@
+{
+  "name": "amp-bp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug -w ./src/ -o ../html -P"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
