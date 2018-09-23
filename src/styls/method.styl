@@ -1,0 +1,37 @@
+#method 
+    background lighten($gr,95%)
+    .grid
+        max-width 1080px
+        margin auto
+    h3
+        // background: linear-gradient(-100deg, rgba(255, 255, 255, 0), $ora 85%, rgba(255, 255, 255, 0));
+        // background: linear-gradient(-100deg, $ora, #fff 85%, $ora);
+        color darken($ora,40%)
+        padding .5rem 
+        text-align center      
+    .grid-item 
+        // border .5rem solid $ora 
+        padding 1rem
+        background lighten($gr,80%)
+        border-radius 1rem
+        box-shadow 0 0 6px $ora
+        margin 2rem 1rem
+        background: linear-gradient(-100deg, $gr, #fff 85%, $gr);
+        p  
+            margin-top 1rem
+
+@media (min-width: 620px), screen and (orientation: landscape)
+    #method
+        .grid-item  
+            margin 0         
+        .grid 
+            display grid
+            grid-template-columns repeat(2, 1fr)
+            grid-template-rows 3
+            grid-gap 2rem
+            
+@media screen and (min-width: 960px)   
+    #method   
+        .grid 
+            grid-template-columns repeat(3, 1fr)
+            grid-template-rows 2
