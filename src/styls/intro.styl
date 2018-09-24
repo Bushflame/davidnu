@@ -1,13 +1,32 @@
 #about 
+    background lighten($gr,80%)
     header 
         max-width 1080px
         margin auto
     .flext 
-        flex-direction column
-    .my-img
-        margin auto 
-        width 50%
-        img
-            border-radius 50%
-    .about 
-        width
+        flex-direction row
+        // align-items stretch
+        justify-content space-between
+
+        .me
+            display flex
+            flex-direction column
+            align-items center
+            background lighten($gr, 30%)
+            margin  0
+            width 30%
+            line-height 1.1
+            padding 1rem
+            p  
+                font-size 1rem
+            h3 
+                margin-top 1rem
+
+            img
+                border-radius 50%
+                display block
+                
+        .about 
+            width 70%
+            // background lighten($gr, 40%)
+            padding 1rem
