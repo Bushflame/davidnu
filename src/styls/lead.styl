@@ -1,3 +1,71 @@
 #lead
-    background #fff
+    // .headerwrap
+    //     display flex
+    //     flex-wrap wrap
+    //     justify-content center
+    //     max-width 1080px
+    //     margin auto
+    //     // border-bottom 1px solid $ora
+    //     .img-wrap 
+    //         width 60%
+    //     header  
+    //         width 100%
+    //         text-align center
+
+    .flext
+        justify-content space-between
+        align-items center
+    .half:nth-child(2)
+        background lighten($gr,40%)
+        margin-top 1rem     
+    .half:nth-child(1)        
+        .features 
+            // position absolute 
+            top 2rem
+            left .5rem
+            right .5rem
+            color darken($gr,80%)
+            font-size 1.3rem
+            padding-bottom 1rem
+            padding-right 1rem
+            li  
+                // list-style none
+                padding-bottom 1rem
+
+    .myli
+        display flex
+        .licon
+            width 15%
+        p 
+            width 85%
+    .table-of-contents
+        h3  
+            text-align center
+        p 
+            margin 0 0 .3rem
+            font-size 1.2rem
+        a  
+            color darken($gr, 20%)            
+
+
+
+@media (min-width: 620px), screen and (orientation: landscape)
+    #lead
+        .headerwrap
+            .img-wrap 
+                width 25%
+            header  
+                width 75%
+                border-left .5rem solid $ora
+                padding-left 1rem
+                h2                   
+                    text-align left
+                .tag 
+                    text-align left
+                    margin 0
+        .flext 
+            .half:nth-child(2)
+                width 30%
+
+
 

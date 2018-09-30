@@ -1,0 +1,33 @@
+#teams
+    background #fff
+    // background linear-gradient(top left, $gr,$ora,$gr, $gr,$ora,$gr) 
+    .flext
+        // background darken($gr, 40%)
+        // background $ora
+        // background linear-gradient(top left, $gr,$ora,$gr)         
+        justify-content space-around
+        padding-top 2rem 
+    .half
+        background rgba(255,255,255,0.5)
+        border-radius 1rem
+        width 100%
+        margin-bottom 2rem
+        box-shadow 0 0 34px lighten($gr,40%)
+        // box-shadow 8px 8px 12px rgba(255,255,255, 0.4)
+        p  
+            color darken($ora,30%)
+            margin-top 1rem
+        .box
+            background darken($gr,40%)
+            background $ora
+            background linear-gradient(top left, $gr,$ora,$gr)
+            border-radius 1rem
+            box-shadow 0 0 34px $gr            
+            // border .5rem solid darken($gr,30%)
+            padding 1rem
+            min-height 14rem
+            text-align center 
+@media (min-width: 620px), screen and (orientation: landscape)
+    #teams
+        .half
+            width 45%

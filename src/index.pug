@@ -26,46 +26,84 @@ html(amp, lang="en")
     script(async, src="https://cdn.ampproject.org/v0.js")
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Nova+Script|Spectral:300" rel="stylesheet">
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
     style(amp-custom)
       include ../html/index.css
   body
+    
     section#top
       .flext     
         .forty
           .logo-wrap
-            <amp-img class="logo" width="200" height="200" layout="responsive" src="./img/logo.png"></amp-img>   
+            <amp-img class="logo" width="200" height="250" layout="responsive" src="./img/logo2.png"></amp-img>   
           h1.title
-            |a world without paper<br/> 
-            span n.u.d.s paperless classroom 
+            |n.u.d.s. paperless classroom<br/> 
+            span the classroom that goes where you go
 
 
         .sixty
           p.tag a website for naresuan university demonstration school students enrolled in the paperless classroom project
     section#lead.section
-      header 
-        h2 the paperpelss classroom: what it means to you
-        p.tag Apart from the obvious absence of paper, some of the benefits of this system are...     
+      .headerwrap
+        .img-wrap
+          <amp-img class="" width="220" height="170" layout="intrinsic" src="img/laptop220x170.png"></amp-img>
+        header 
+          h2 the benefits of your paperless classroom
+          p.tag Apart from the obvious absence of paper, some of the benefits of this system are...     
       .flext
         .half
-          .img-wrap 
-            <amp-img class="" width="500" height="380" layout="responsive" src="img/laptop.png"></amp-img>
-        .half            
-          ul 
-            li Assignments can be completed using any internet device 
-            li No sending emails backwards and forwards
-            li Edits can be viewed in real time
-            li Assignments not completed in class automatically become homework
-            li Revision materials with you where ever you go
+          .myli
+            .licon
+              <amp-img class="logo" width="50" height="50" layout="intrinsic" src="./img/logo.png"></amp-img>
+            p Assignments can be completed using any internet device              
+          .myli
+            .licon
+              <amp-img class="logo" width="50" height="50" layout="intrinsic" src="./img/logo.png"></amp-img>
+            p No sending emails backwards and forwards and no need for USB drives  
+          .myli
+            .licon
+              <amp-img class="logo" width="50" height="50" layout="intrinsic" src="./img/logo.png"></amp-img>
+            p Multiple people can edit the same file at the same time 
+          .myli
+            .licon
+              <amp-img class="logo" width="50" height="50" layout="intrinsic" src="./img/logo.png"></amp-img>
+            p Edits can be viewed in real time. Watch edits as they happen 
+          .myli
+            .licon
+              <amp-img class="logo" width="50" height="50" layout="intrinsic" src="./img/logo.png"></amp-img>
+            p Revision and lesson materials with you where ever you go 
 
-    section#about.section
-      header 
-        h2 what it's all about
-        p.tag some bullshit goes herezzz           
+        .half 
+          .table-of-contents
+            h3 table of contents  
+            p <a href="#" on="tap:intro.scrollTo(duration=200)">Introduction</a>
+            p <a href="#" on="tap:classroom.scrollTo(duration=250)">In the classroom</a>  
+            p <a href="#" on="tap:getting-started.scrollTo(duration=300)">Getting started</a>
+            p <a href="#" on="tap:method-1.scrollTo(duration=350)">Module struction 1</a>
+            p <a href="#" on="tap:method-2.scrollTo(duration=400)">Module structure 2</a>
+            p <a href="#" on="tap:teams.scrollTo(duration=450)">Teamwork</a>
+            p <a href="#" on="tap:eca.scrollTo(duration=500)">Grading</a>
+            p <a href="#" on="tap:extra.scrollTo(duration=550)">Making the most of your account</a>
+            p <a href="#" on="tap:bonus.scrollTo(duration=600)">Bonus</a>
+            p <a href="#" on="tap:contact.scrollTo(duration=650)">Contact</a>
+
+    section#intro.section
+      .headerwrap
+        .img-wrap
+          <amp-img class="" width="220" height="170" layout="intrinsic" src="img/david.png"></amp-img>
+        header 
+          h2 what's it all about
+          p.tag A look at the system and what you'll be learning         
       .flext
         .me
-          <amp-img class="" width="400" height="300" layout="intrinsic" src="img/david.png"></amp-img>
-          h3 title
-          p Hi, I'm David, I created and administer this program independently of N.U. While I do use a free version of Google's G Suite, I don't use Google Classroom. I found it too cumbersome and limiting.
+          
+          h3 A little info about the project 
+          p Hi, I'm David, I created and administer this program for the benefit of N.U.D.S. students. 
+          p While I do use a free version of Google's G Suite, I don't use Google Classroom. I found it too cumbersome and restrictive.
+          P This website is the early stages. I hope to add more pages and probably extra guidance. 
+          p If you have any questions about how everything operates, please don't hesitate to contact me using one of the methods at the bottom of the page.
+          p Regards<br/>ฝรั่งหล่อ
         .about 
           h3 title
           p I'm going to be teaching you mainly academic English, along with a range of idioms. I'll be providing useful stock phrases which you can use in a variety of contexts. 
@@ -78,39 +116,92 @@ html(amp, lang="en")
             li Business management
             li Economics
             li Sustainable design
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>
 
     section#classroom.section
-      header 
-        h2 how we will be working
-        p.tag a llok into how the class and team assignments progress           
+      .headerwrap
+        .img-wrap
+          <amp-img class="" width="220" height="140" layout="intrinsic" src="img/devices220x140.png"></amp-img>
+        header 
+          h2 how we will be working
+          p.tag a look into how the class and team assignments progress                     
       .flext
         .half
           h3 your class
-          p As well as being accessible with any internet device, during lessons the assignments are projected onto a screen at the front of the class. You connect to the assignment document with either a laptop or mobile device. Edits to the document are in real time, i.e. they can be seen instantly. The assignments can be completed during the lesson, or as homework. You can all see each others responses. WARNING! Copying is easily noticed. 
-        .half
-          <amp-img class="" width="500" height="280" layout="responsive" src="img/devices500x280.png"></amp-img>
-
+          p As well as being accessible with any internet device, during lessons the assignments are projected onto a screen at the front of the class. You connect to the assignment document with either a laptop or mobile device. 
+          p Edits to the document are in real time, i.e. they can be seen instantly. The assignments may be completed during the lesson, or as homework. 
+          p You can all see each others responses. You're welcome to compare and discuss your answers with other teams. take note of how others structure their answers and uses the vocabulary. Can you do better? 
+          
+          p WARNING! Copying is easily noticed. 
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>
     section#getting-started.section
-      header 
-        h2 how we beginzz
-        p.tag some bullshit goes here
+      .headerwrap
+        .img-wrap
+          <amp-img class="" width="220" height="150" layout="intrinsic" src="img/account.png"></amp-img>
+        header 
+          h2 Getting started: creating your account
+          p.tag A step by step guide to getting your account up and running  
       .flext
-        .half 
-          h3 account creation
-          p I'll begin by giving you access to a spreadsheet for you to add your details in English. Your login details will be: nickname + initials + @davidnu.com. Your password, which you must change, will be your student ID number.
-          p Once I’ve have created your accounts I’ll provide your login details. Then I’ll share two dropboxes with you. One for every class (e.g. M5 Dropbox) and the other for your class (e.g. M5.1 Dropbox)
-          p You'll then form groups and choose one of the team names I give you. Each class will have 6 teams of 6 or 7 students 
-        .half 
-          h3 keeping it tidy with dropboxes
-          p In the “class” dropbox you’ll find the workbook for submitting your tasks. I may add other files specific to your class later.
-          p In the “year” dropbox you’ll find a grade sheet. This will be automatically updated every time you complete a class, team or oral component. There’ll also be a course document with all the assignment details. I will add other files, such as midterm and final notes, later.
-          p Obviously you’ll only be able to edit the assignments file, the rest you will only be allowed to view. Please note the shitlist which lists you behavior and is going to be made accessible to your parents
- 
+        .half
+          .myli
+            .licon
+              .dot
+            .text
+              h4 Get connected  
+              p Add me on <a href="https://www.facebook.com/kru.david.16" target="_blank">FaceBook</a>. I will use this account to keep you updated        
+          .myli
+            .licon
+              .dot
+            .text
+              h4 Your details  
+              p I'll give you access to spreadsheet to add your details to in English. I need your first name, last name and nickname. The sheet will automatically create your email address from your nickname and initials.
+          .myli
+            .licon
+              .dot
+            .text
+              h4 Your account  
+              p Once I've created your account I'll explain how to access all the documents
+          .myli
+            .licon
+              .dot
+            .text
+              h4 Team allocation  
+              p You will be assigned to a team with five or 6 other students. I choose the team!
+
+        .half
+          .myli
+            .licon
+              .dot
+            .text
+              h4 Dropboxes  
+              p I will give you access to two folders (dropboxes). Do not create any files in these dropboxes 
+          .myli
+            .licon
+              .dot
+            .text
+              h4 The year dropbox  
+              p Everyone in your year, and your parents if they ask, will have access to this folder. In here you will find your grade sheet. This is automatically updated every time you complete a class, team, or oral component.
+          .myli
+            .licon
+              .dot
+            .text
+              h4 The class dropbox  
+              p in here you'll find the workbook for completing your assignments. You do not need to submit any assignments. I can see them as soon as you add them to your workbook 
+          .myli
+            .licon
+              .dot
+            .text
+              h4 Updates  
+              p I will be adding more files, such as test, midterm and final guidance as the course progresses  
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button> 
 
     section.break
-      <amp-img class="big" width="6.4" height="1" layout="responsive" src="img/desktop1920.jpg"></amp-img>
-      <amp-img class="medium" width="3.84" height="1" layout="responsive" src="img/desktop960.jpg"></amp-img>
-      <amp-img class="small" width="1.84" height="1" layout="responsive" src="img/desktop480.jpg"></amp-img>              
+      <amp-img class="big" width="6" height="1" layout="responsive" src="img/desktop1080.jpg"></amp-img>
+      <amp-img class="medium" width="4" height="1" layout="responsive" src="img/desktop960.jpg"></amp-img>
+      <amp-img class="small" width="2" height="1" layout="responsive" src="img/desktop360.jpg"></amp-img>              
     section#method-1.section
       header 
         h2 method 1
@@ -134,39 +225,79 @@ html(amp, lang="en")
         .grid-item
           h3 Oral multiplier
           p *To prevent a “read, speak, forget” scenario in the regular oral tests, at the end of the semester you need to speak 4 random phrases, of my choosing, from the entire vocabulary list. The score for this test is used to multiply the earlier scores. 
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>        
     section#method-2.section
       header 
         h2 method 2
-        p.tag some bullshit goes here
+        p.tag some bullshit goes herez
       .flext 
-        .half 
+        .third 
           h3 title
           p The second approach only spans two periods and is fast and furious. I'll provide you with the vocabulary and give you examples and guidance, After this I'll provide you with a block of text in the context of the topic, containing examples of the vocabulary. You'll them be required to give everyday examples of the vocabulary. 
-          p Grading will be for team and class. You must complete this assignment during the lesson. Once the lesson ends you won't be able to edit your work book.  
-        .half
+     
+        .third
+          h3 title
+            p Grading will be for team and class. You must complete this assignment during the lesson. Once the lesson ends you won't be able to edit your work book. 
+        .third
           h3 title
           p This part will feature a short multiplier test where you'll answer questions about the vocabulary or the vocabulary and topic.
           p Straight after the multiplier test, in the same period, we'll have the oral test. ONce again youll be asked to provide a ramdom phrase from the vocabulary list.
-
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>
     section.break
-      <amp-img class="big" width="5.49" height="1" layout="responsive" src="img/team1920.jpg"></amp-img>
-      <amp-img class="medium" width="2.74" height="1" layout="responsive" src="img/team960.jpg"></amp-img>
-      <amp-img class="small" width="1.37" height="1" layout="responsive" src="img/team480.jpg"></amp-img> 
+      <amp-img class="big" width="5.4" height="1" layout="responsive" src="img/team1080.jpg"></amp-img>
+      <amp-img class="medium" width="3.6" height="1" layout="responsive" src="img/team720.jpg"></amp-img>
+      <amp-img class="small" width="1.37" height="1" layout="responsive" src="img/Team360.jpg"></amp-img> 
 
+    section#teams.section
+      .headerwrap
+        .img-wrap
+          <amp-img class="" width="220" height="150" layout="intrinsic" src="img/team.png"></amp-img>
+        header 
+          h2 teamwork: and why it matters
+          p.tag everything we do in life affects others, therefore the importance of teamwork cannot be underestimated. ... and don't forget, teachers need help too      
+      .flext 
+        .half 
+          .box
+            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img>              
+            h4  Throughout our adult life there are times when we need to help and support others. We must also understand that our performance affects those around us
+          p The approach I take deals with both these scenarios. 10% of your total grade with depend upon how well all of your team perform in the individual tests. So what does this do?
+        .half 
+          .box
+            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img> 
+            h4 Some students give up before they even start or are afraid to ask for help when they needed. Sometimes a little push is all they need
+          p Knowing that others are depending on them could be all they need. Otherwise they can ask their team mates. None of us are super human, we all need help at sometime. Hopefully; knowing if you fail, your team fails will encourage you to do better.
+        .half 
+          .box
+            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img>              
+            h4 Not many people forget a helping hand. Helping someone when they neeed it could pay you back many times over in the future.
+          p Advanced learners: here's a chance for you to develop your leadership skill by taking charge of your group. I strongly advise you to help others, rather than just do the assignments for them. Remember, if your team mates fail, you fail!               
+        .half 
+          .box
+            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img>              
+            h4 Whatever profession you decide to follow, I doubt you will be working alone. You will depend on others and other will depend on you
+          p We all have strengths and weaknesses. Not being good in a specific area is nothing to be ashamed of. In a team we all help each other. A good team is always greater than the sum of its parts.
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>               
     section#eca.section
       header 
         h2 grading
-        p.tag how the scores for the different components all add up
+        p.tag how the scores from the different components all add up
           .flext 
             ul 
               li 
                 p
                   span class & team work:
-                  |40% of your total grade, pending multipliers
+                  |35% of your total grade, pending multipliers
               li 
                 p 
                   span oral:
-                  |20% of your total grade, pending multiplier     
+                  |15% of your total grade, pending multiplier 
+              li 
+                p 
+                  span team:
+                  |10% of your total grade, the average of all your team's scores in the multiplier tests                       
               li 
                 p 
                   span midterm:
@@ -174,16 +305,19 @@ html(amp, lang="en")
               li 
                 p 
                   span final
-                  |25% of your total grade    
+                  |25% of your total grade
+            h3 The grade sheet 
+            p The marks for each component are added as soon as the component is completed. The sheet automatically calculates your grade. I don't believe in surprising you with your final grade at the end of the semester. Having access to all your scores will allow you to identify your strengths and weaknesses          
             h3 It won't be easy
             p Achieving grade 4 will not be easy. To do so you must demostrate good use of the vocabulary and an understanding of the topics. It is to everyones benefit that future universities and employers of NUDS students can have confidence in the grades we award 
             h3 cheating: don't do it!
             p I want students to be proud of themselves for achieving grade 4 in my subject. Cheating devalues the grade of every honest student and lowers the perceived standards of the school. Instead of trying to improve the learning experience, I am having to waste time trying to prevent cheating. This means because a few students cheat, every student suffers.
             p cheating will result in suspension of grade until parents have given their assurance it will not happen again. The student will also be downgraded.
-
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>
     section#extra.section
       header 
-        h2 outside of the courses
+        h2 outside of the course
         p.tag there's much more to G suite than what I'll be teaching
           .flext
             .half 
@@ -194,6 +328,8 @@ html(amp, lang="en")
               h3 for the future
               p G Suite, or something similar, is used in most western high schools and many universities. While you will learn the basics of G suite as the courses progress, there is much more than to that what we're able to cover.
               p I provide extra guidance for such things as: formatting documents, creating quizzes and surveys, and working with spreadsheets. All of which are accessible at any time.
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>              
     section#bonus.section
       header 
         h2 a bonus and thank you
@@ -207,7 +343,9 @@ html(amp, lang="en")
             li assignments
             li Oral tests
             li Midterm
-          p Due to timing, I won't be including scores for the final examination. needless to say, any cheeating and the best you can hope for is a spinach sandwich. 
+          p Due to timing, I won't be including scores for the final examination. needless to say, any cheeating and the best you can hope for is a spinach sandwich.
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>           
     section#contact.section
       header 
         h2 Getting in touch
@@ -263,3 +401,5 @@ html(amp, lang="en")
           </form>        
     #footer 
       p Web design by D.F. Glover &copy;Copyright: David Glover(2018)    
+      .section-footer
+        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>

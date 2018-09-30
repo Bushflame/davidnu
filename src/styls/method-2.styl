@@ -1,9 +1,16 @@
-#method-2  
-    background darken($gr, 50%)
 
-    .flext 
-        .half
-        h3  
-            color lighten($gr, 60%)
-        p  
-            color lighten($gr, 80%)
+
+#method-2
+    .third
+        background: linear-gradient(-100deg, $gr, #fff 85%, $gr);
+    h3
+        color darken($gr, 60%)
+    p  
+        color darken($gr, 80%)
+@media (min-width: 620px), screen and (orientation: landscape)
+    #method-2
+        .flext
+            justify-content space-around 
+            .third
+                background: linear-gradient(-100deg, $gr, #fff 85%, $gr);
+                width 30%

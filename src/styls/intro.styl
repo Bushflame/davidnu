@@ -1,4 +1,4 @@
-#about 
+#intro 
     background lighten($gr,80%)
     header 
         max-width 1080px
@@ -6,35 +6,35 @@
     .flext 
         flex-direction row
         flex-wrap wrap
+        justify-content space-between
         .me
             display flex
             flex-direction column
             align-items center
             background lighten($gr, 30%)
+            padding-top 1rem
             img
                 border-radius 50%
                 display block
+        .about 
+            padding-top 1rem        
 
         // align-items stretch
-        justify-content space-between
-        @media (min-width: 620px), screen and (orientation: landscape)
-            .me
-                display flex
-                flex-direction column
-                align-items center
-                background lighten($gr, 30%)
-                margin  0
-                width 30%
-                line-height 1.1
-                padding 1rem
-                p  
-                    font-size 1rem
-                h3 
-                    margin-top 1rem
 
+    @media screen and (min-width: 720px)
+        .me
+            display flex
+            flex-direction column
+            align-items center
+            margin  0
+            
 
-                    
-            .about 
-                width 70%
-                // background lighten($gr, 40%)
-                padding 1rem
+            width 35%
+            line-height 1.1
+            padding 1rem
+            p  
+                font-size 1rem
+            h3 
+                margin-top 1rem                    
+        .about 
+            width 65%

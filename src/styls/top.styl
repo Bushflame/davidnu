@@ -1,8 +1,8 @@
 #top
     // background: linear-gradient(160deg, $ora, $ora 40%, $gr 40%, $gr 60%, $ora, $ora 60%);
-    background darken($gr,20%)
-    border-top 1rem solid $ora
-    border-bottom 1rem solid $ora
+    background linear-gradient(top left, $gr,$ora,$gr)
+    // border-top 1rem solid $gr
+    // border-bottom 1rem solid $gr
     padding 1rem 0
 
     // border-bottom .5rem solid $ora
@@ -24,8 +24,9 @@
                 width 100%
         .title  
             width 100%
-            color $ora
+            color darken($gr,50%)
             text-align center
+            margin 0 .5rem
     .tag 
         color #ffffff
         margin-top 1rem

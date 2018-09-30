@@ -33,21 +33,29 @@ h1
         font-family: 'Nova Script', cursive;
         font-size 1.8rem
         text-transform capitalize
-        color darken($ora,10%)
+        color darken($gr,40%)
 h2  
-    color darken($gr,30%)
-    font-size 3rem
+    color $ora
+    font-size 2rem
     font-weight 300
     font-family: 'Fredericka the Great', cursive;
     text-align center
-    text-transform uppercase
-    text-shadow 2px 2px 2px #fff    
-h3  
+    text-transform uppercase   
+h3 
     color darken($gr,60%)
-    font-size 1.8rem
+    font-size 1.4rem
     line-height 1
-    margin 0
+    font-weight 300
+    margin 0 1rem
     text-transform capitalize
+h4  
+    color #fff
+    font-size 1.4rem
+    line-height 1
+    font-weight 300
+    margin 0
+    
+
 p  
     color darken($br,50%) 
     font-size 1.1rem
@@ -77,15 +85,47 @@ p
     text-transform capitalize
     font-family: 'Srisakdi', cursive;
     font-family: 'Nova Script', cursive;
-    font-size 1.7rem
+    font-size 1.3rem
     color darken($ora,60%)
     margin-top 0
     text-align center
+
+.headerwrap
+    display flex
+    flex-wrap wrap
+    justify-content center
+    max-width 1080px
+    margin 1rem auto
+    // background darken($gr,12%)
+    padding 1rem
+    // border-bottom 1px solid $ora
+    .img-wrap 
+        width 60%
+
+    header  
+        width 100%
+        text-align center
+@media (min-width: 620px), screen and (orientation: landscape)
+    .headerwrap
+        .img-wrap 
+            width 25%
+        header  
+            width 75%
+            border-left .5rem solid $ora
+            padding-left 1rem
+            h2                   
+                text-align left
+            .tag 
+                text-align left
+                margin 0
+                min-height 4rem        
+
 .logo
+.logo2
     display inline-block
 ul  
     color #965426
-    font-size 1.5rem
+    font-size 1.25rem
 
 //flex-system
 .flext 
@@ -96,6 +136,7 @@ ul
     box-sizing border-box
     max-width 1080px
     margin auto
+    padding 0 1rem
 .half 
     padding 1rem
     box-sizing border-box
@@ -128,4 +169,14 @@ ul
 @media screen and (min-width: 960px)
     .third    
         width 32%
-        
+.section-footer
+    display flex
+    justify-content center
+    padding-top 2rem
+    button 
+        background $gr
+        border-radius 1.5rem
+        border 2px solid $ora
+        color #fff
+        font-size 1.3rem
+        padding 1rem
