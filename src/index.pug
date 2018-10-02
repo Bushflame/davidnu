@@ -80,8 +80,7 @@ html(amp, lang="en")
             p <a href="#" on="tap:intro.scrollTo(duration=200)">Introduction</a>
             p <a href="#" on="tap:classroom.scrollTo(duration=250)">In the classroom</a>  
             p <a href="#" on="tap:getting-started.scrollTo(duration=300)">Getting started</a>
-            p <a href="#" on="tap:method-1.scrollTo(duration=350)">Module struction 1</a>
-            p <a href="#" on="tap:method-2.scrollTo(duration=400)">Module structure 2</a>
+            p <a href="#" on="tap:course-structure.scrollTo(duration=350)">Course structure</a>
             p <a href="#" on="tap:teams.scrollTo(duration=450)">Teamwork</a>
             p <a href="#" on="tap:eca.scrollTo(duration=500)">Grading</a>
             p <a href="#" on="tap:extra.scrollTo(duration=550)">Making the most of your account</a>
@@ -197,59 +196,36 @@ html(amp, lang="en")
               p I will be adding more files, such as test, midterm and final guidance as the course progresses  
       .section-footer
         <button on="tap:top.scrollTo(duration=500)">Back To Top</button> 
-
-    section.break
-      <amp-img class="big" width="6" height="1" layout="responsive" src="img/desktop1080.jpg"></amp-img>
-      <amp-img class="medium" width="4" height="1" layout="responsive" src="img/desktop960.jpg"></amp-img>
-      <amp-img class="small" width="2" height="1" layout="responsive" src="img/desktop360.jpg"></amp-img>              
-    section#method-1.section
-      header 
-        h2 method 1
-        p.tag some bullshit goes here           
-      .grid
-        .grid-item
-          h3 course modules
-          p Each course is divided into a number of four part modules. The first two are class and team assignments. The third tests you for fluency and accuracy of the vocabulary. The fourth is gotcha for any student hoping to rely on their team mates for a higher grade.
-        .grid-item
-          h3 part 1: phrases
+    section#course-structure.section
+      .headerwrap
+        .img-wrap
+          <amp-img class="" width="220" height="170" layout="intrinsic" src="img/david.png"></amp-img>
+        header 
+          h2 course structure
+          p.tag a look at how each component is structured 
+      .card-grid
+        .card
+          h3.card-tab course modules
+          p Each course is divided into a number of four part modules. The first two are class and team assignments. The third tests you for fluency and accuracy of the vocabulary. The fourth is a gotcha for any student hoping to rely on their team mates for a higher grade.
+          p Some modules will feature the class and team assignments in one lesson with oral and multipler components in the next. 
+        .card
+          h3.card-tab Part 1: Vocabulary
           p I provide and demonstrate 5 or 6 pieces of vocabulary. Each team provides examples of the given phrase in any context. For this part you are graded as a class. You can see other responses and also add comments if you think improvements can be made. You should all work together.
-        .grid-item
-          h3 part 2: topic
-          p After the lecture each team responds with a given scenario. Scoring is on a team basis. Bonus for the best answers and “Team of the Month” awards may be available.                     
-        .grid-item
-          h3 part 3: oral
-          p Oral: You are required to speak one of the phrases, of the teacher’s choosing, from part one. *At this point students are given a preliminary score
-        .grid-item
-          h3 part 4: multiplier test
-          p An individual test where you are required to use the phrases from part one in the context of the topic. The score from this is used to multiply the scores from parts 1 and 2. This ensures a fairer grade. The test is online and marked automatically
-        .grid-item
-          h3 Oral multiplier
-          p *To prevent a “read, speak, forget” scenario in the regular oral tests, at the end of the semester you need to speak 4 random phrases, of my choosing, from the entire vocabulary list. The score for this test is used to multiply the earlier scores. 
-      .section-footer
-        <button on="tap:top.scrollTo(duration=500)">Back To Top</button>        
-    section#method-2.section
-      header 
-        h2 method 2
-        p.tag some bullshit goes herez
-      .flext 
-        .third 
-          h3 title
-          p The second approach only spans two periods and is fast and furious. I'll provide you with the vocabulary and give you examples and guidance, After this I'll provide you with a block of text in the context of the topic, containing examples of the vocabulary. You'll them be required to give everyday examples of the vocabulary. 
-     
-        .third
-          h3 title
-            p Grading will be for team and class. You must complete this assignment during the lesson. Once the lesson ends you won't be able to edit your work book. 
-        .third
-          h3 title
-          p This part will feature a short multiplier test where you'll answer questions about the vocabulary or the vocabulary and topic.
-          p Straight after the multiplier test, in the same period, we'll have the oral test. ONce again youll be asked to provide a ramdom phrase from the vocabulary list.
+        .card
+          h3.card-tab part 2: topic
+          p After the lecture each team responds with a given scenario. Scoring is on a team basis. Bonus for the best answers and “Team of the Month” awards may be available.
+          p You'll be expected to learn the core concepts and vocabulary from each topic for your midterm and final exams.
+        .card
+          h3.card-tab part 3: oral
+          p Oral: You are required to speak one of the phrases, of the teacher’s choosing, from part one. *At this point students are given a preliminary score 
+        .card
+          h3.card-tab part 4: multiplier test
+          p An individual test where you are required to use the phrases from part one in the context of the topic. The score from this is used to multiply the scores from parts 1 and 2. This ensures a fairer grade. The test is online and marked automatically 
+        .card
+          h3.card-tab oral multiplier
+          p *To prevent a “read, speak, forget” scenario in the regular oral tests, at the end of the semester you need to speak 4 random phrases, of my choosing, from the entire vocabulary list. The score for this test is used to multiply the earlier scores.          
       .section-footer
         <button on="tap:top.scrollTo(duration=500)">Back To Top</button>
-    section.break
-      <amp-img class="big" width="5.4" height="1" layout="responsive" src="img/team1080.jpg"></amp-img>
-      <amp-img class="medium" width="3.6" height="1" layout="responsive" src="img/team720.jpg"></amp-img>
-      <amp-img class="small" width="1.37" height="1" layout="responsive" src="img/Team360.jpg"></amp-img> 
-
     section#teams.section
       .headerwrap
         .img-wrap
