@@ -11,6 +11,7 @@
             border-radius 0 .6rem .6rem .6rem
             box-shadow 6px 16px 12px lighten($gr, 40%)
             margin-bottom 3rem
+            padding-bottom 1rem
 
             .card-tab
                 color darken($ora, 50%)
@@ -25,12 +26,19 @@
                 background lighten($gr,30%)
 @media (min-width: 620px), screen and (orientation: landscape)
     #course-structure
+        .card 
+            width 70%
+            margin auto                
+@media screen and (min-width: 760px)
+    #course-structure
         .card-grid
             display grid
             grid-template-columns repeat(2, 1fr)
             grid-template-rows 2
             grid-gap 2.5rem 1rem
             .card 
+                width 100%
+                margin 0
                 margin-bottom 0
 @media screen and (min-width: 960px)
     #course-structure 

@@ -1,15 +1,13 @@
 doctype
 html(amp, lang="en")
-  head
-    meta(charset="utf-8")
+  include ./includes/head.pug
+    //- HEAD VARIABLES
+      //- TITLE
+      //- CANONICAL LINK
+      //- JSON
+      //- STYLES
     title davidnu
-    link(rel="canonical", href="https://example/index.html")
-    meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
-    <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
-    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Fredericka+the+Great|Nova+Script|Srisakdi:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
- 
+    link(rel="canonical", href="https://davidnu.com/index.html")
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
@@ -20,14 +18,8 @@ html(amp, lang="en")
         "image": [
           "favicon.ico"
         ]
-      }
-    | 
-    |<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    script(async, src="https://cdn.ampproject.org/v0.js")
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Nova+Script|Spectral:300" rel="stylesheet">
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
-    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+      } 
+
     style(amp-custom)
       include ../html/index.css
   body 
@@ -77,16 +69,16 @@ html(amp, lang="en")
         .half 
           .table-of-contents
             h3 table of contents  
-            p <a href="#" on="tap:intro.scrollTo(duration=200)">Introduction</a>
-            p <a href="#" on="tap:classroom.scrollTo(duration=250)">In the classroom</a>  
-            p <a href="#" on="tap:getting-started.scrollTo(duration=300)">Getting started</a>
-            p <a href="#" on="tap:course-structure.scrollTo(duration=350)">Course structure</a>
-            p <a href="#" on="tap:teams.scrollTo(duration=450)">Teamwork</a>
-            p <a href="#" on="tap:eca.scrollTo(duration=500)">Grading</a>
-            p <a href="#" on="tap:extra.scrollTo(duration=550)">Making the most of your account</a>
-            p <a href="#" on="tap:bonus.scrollTo(duration=600)">Bonus</a>
-            p <a href="#" on="tap:contact.scrollTo(duration=650)">Contact</a>
-
+          
+            <button on="tap:intro.scrollTo(duration=500)">Introduction</button><br/>
+            <button on="tap:classroom.scrollTo(duration=500)">In the classroom</button><br/>        
+            <button on="tap:getting-started.scrollTo(duration=500)">Getting started</button><br/> 
+            <button on="tap:course-structure.scrollTo(duration=500)">Course structure</button><br/> 
+            <button on="tap:teams.scrollTo(duration=500)">Teams</button><br/> 
+            <button on="tap:eca.scrollTo(duration=500)">Grading</button><br/>   
+            <button on="tap:extra.scrollTo(duration=500)">Your account</button><br/> 
+            <button on="tap:bonus.scrollTo(duration=500)">Bonus</button><br/> 
+            <button on="tap:contact.scrollTo(duration=500)">contact</button>           
     section#intro.section
       .headerwrap
         .img-wrap
@@ -108,16 +100,15 @@ html(amp, lang="en")
           p I'm going to be teaching you mainly academic English, along with a range of idioms. I'll be providing useful stock phrases which you can use in a variety of contexts. 
           p My aim is to provide you with a wide range of vocabulary. For this reason I've chosen project based teaching, so you'll also be learning the fundementals of a range of topics.
           p All modules are flexible, so if there any aspects of the English language you need help with, please ask and I will add them. We can work together to provide better courses for you and future generations
-          ul 
-            li Health science: Nociception
-            li Dentistry 
-            li Law 
-            li Business management
-            li Economics
-            li Sustainable design
+          //- ul 
+          //-   li Health science: Nociception
+          //-   li Dentistry 
+          //-   li Law 
+          //-   li Business management
+          //-   li Economics
+          //-   li Sustainable design
       .section-footer
         <button on="tap:top.scrollTo(duration=500)">Back To Top</button>
-
     section#classroom.section
       .headerwrap
         .img-wrap
@@ -236,22 +227,22 @@ html(amp, lang="en")
       .flext 
         .half 
           .box
-            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img>              
+            <amp-img class="logo" width="85" height="80" layout="intrinsic" src="./img/logo.png"></amp-img>              
             h4  Throughout our adult life there are times when we need to help and support others. We must also understand that our performance affects those around us
           p The approach I take deals with both these scenarios. 10% of your total grade with depend upon how well all of your team perform in the individual tests. So what does this do?
         .half 
           .box
-            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img> 
+            <amp-img class="logo" width="85" height="80" layout="intrinsic" src="./img/logo.png"></amp-img> 
             h4 Some students give up before they even start or are afraid to ask for help when they needed. Sometimes a little push is all they need
           p Knowing that others are depending on them could be all they need. Otherwise they can ask their team mates. None of us are super human, we all need help at sometime. Hopefully; knowing if you fail, your team fails will encourage you to do better.
         .half 
           .box
-            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img>              
+            <amp-img class="logo" width="85" height="80" layout="intrinsic" src="./img/logo.png"></amp-img>              
             h4 Not many people forget a helping hand. Helping someone when they neeed it could pay you back many times over in the future.
           p Advanced learners: here's a chance for you to develop your leadership skill by taking charge of your group. I strongly advise you to help others, rather than just do the assignments for them. Remember, if your team mates fail, you fail!               
         .half 
           .box
-            <amp-img class="logo" width="85" height="75" layout="intrinsic" src="./img/logo.png"></amp-img>              
+            <amp-img class="logo" width="85" height="80" layout="intrinsic" src="./img/logo.png"></amp-img>              
             h4 Whatever profession you decide to follow, I doubt you will be working alone. You will depend on others and other will depend on you
           p We all have strengths and weaknesses. Not being good in a specific area is nothing to be ashamed of. In a team we all help each other. A good team is always greater than the sum of its parts.
       .section-footer
@@ -337,12 +328,12 @@ html(amp, lang="en")
               <i class="material-icons">local_phone</i>
               p 
                 span Tel:<br/>
-                |No Chance!
+                |055 378 076
             .details
               <i class="material-icons">phone_iphone</i>
               p 
                 span Mobile:<br/>
-                |No Chance
+                |Sorry: Not happening
             .details
               <i class="material-icons">location_city</i>
               p 
@@ -377,5 +368,4 @@ html(amp, lang="en")
           </form>
       .section-footer
         <button on="tap:top.scrollTo(duration=500)">Back To Top</button>                  
-    #footer 
-      p Web design by D.F. Glover &copy;Copyright: David Glover(2018)    
+    include includes/footer.pug  

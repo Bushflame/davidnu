@@ -1,16 +1,5 @@
 #lead
-    // .headerwrap
-    //     display flex
-    //     flex-wrap wrap
-    //     justify-content center
-    //     max-width 1080px
-    //     margin auto
-    //     // border-bottom 1px solid $ora
-    //     .img-wrap 
-    //         width 60%
-    //     header  
-    //         width 100%
-    //         text-align center
+
 
     .flext
         justify-content space-between
@@ -41,6 +30,14 @@
     .table-of-contents
         h3  
             text-align center
+        button
+            margin-bottom .3rem
+            font-size 1.1rem
+            text-decoration underline
+            text-align left
+            background transparent  
+            outline none 
+            border none
         p 
             margin 0 0 .3rem
             font-size 1.2rem
@@ -51,21 +48,20 @@
 
 @media (min-width: 620px), screen and (orientation: landscape)
     #lead
-        .headerwrap
-            .img-wrap 
-                width 25%
-            header  
-                width 75%
-                border-left .5rem solid $ora
-                padding-left 1rem
-                h2                   
-                    text-align left
-                .tag 
-                    text-align left
-                    margin 0
-        .flext 
+        .flext
+            .half:nth-child(1)
+                width 80%
+                margin auto
+            .half:nth-child(2)
+                width 60%
+                margin auto
+@media screen and (min-width: 960px)
+    #lead
+        .flext
+            .half:nth-child(1)
+                width 60%
+
             .half:nth-child(2)
                 width 30%
-
 
 
